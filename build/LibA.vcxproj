@@ -110,6 +110,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/Debug/exports.def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -117,6 +134,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/Debug/LibA.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/Debug/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/Debug/LibA.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -150,6 +168,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/Release/exports.def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -157,6 +192,7 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/Release/LibA.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/Release/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/Release/LibA.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -190,6 +226,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/MinSizeRel/exports.def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -197,6 +250,7 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/MinSizeRel/LibA.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/MinSizeRel/LibA.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -229,6 +283,23 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/RelWithDebInfo/exports.def C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -236,6 +307,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/RelWithDebInfo/LibA.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/LibA.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/RelWithDebInfo/LibA.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
