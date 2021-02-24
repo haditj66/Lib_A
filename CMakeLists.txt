@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.17.3) 
 project(LibA)
 
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # Use this snippet *after* PROJECT(xxx):
 message("before-------------------")
