@@ -15,11 +15,10 @@ message("asdasd-------------------${CMAKE_INSTALL_PREFIX}")
 # Include sub-projects.
 #add_subdirectory ("LibraryA") 
 
-add_library (LibA STATIC "Adder.cpp" "Adder.h")
+add_library (LibA SHARED "Adder.cpp" "Adder.h")
  
 
-install(TARGETS LibA
-		LIBRARY DESTINATION ${PROJECT_NAME}/bin)
+#install(TARGETS LibA		LIBRARY DESTINATION ${PROJECT_NAME}/bin)
 
 
 #add_executable(${PROJECT_NAME} main.cpp)
