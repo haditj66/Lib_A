@@ -948,7 +948,7 @@
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
        The target "CopyLocalFilesOutputGroup" listed in a BeforeTargets attribute at "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets (99,82)" does not exist in the project, and will be ignored.
-Build started 2/24/2021 2:44:56 AM.
+Build started 2/24/2021 3:10:08 AM.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "Current".
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -972,10 +972,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
      1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={186F3A6B-29EE-4D98-B8B0-A71F1835995E}
+         VSTEL_SolutionSessionID={4C1F5368-5ECE-40DA-BAB3-9E5C50DE8BD8}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=3543560298
+         VSTEL_CurrentSolutionBuildID=3545071207
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={a80f85b6-cbda-4652-9a21-0f628bfc2275}
@@ -987,7 +987,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
      1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "Lib_A.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\main.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\Adder.cpp;..\main.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "Lib_A.vcxproj".
      1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ResolveReferences" depends on it):
@@ -1104,7 +1104,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "Lib_A.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\main.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\Adder.cpp;..\main.cpp'!='' and 'false'=='true' and '' != 'false').
        Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
      1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
@@ -1141,7 +1141,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "Debug\Lib_A.tlog\unsuccessfulbuild".
+         Creating "Debug\Lib_A.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Lib_A.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
@@ -1237,6 +1237,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "ComputeReferenceCLInput" in project "Lib_A.vcxproj".
      1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_ClCompile" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Adder.cpp' != 'Adder.cpp' and 'Debug\' == 'Debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'main.cpp' != 'main.cpp' and 'Debug\' == 'Debug\').
      1>Done building target "WarnCompileDuplicatedFilename" in project "Lib_A.vcxproj".
      1>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_ClCompile" depends on it):
@@ -1257,7 +1258,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
      1>Target "SelectClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ClCompile" depends on it):
      1>Done building target "SelectClCompile" in project "Lib_A.vcxproj".
        Target "SelectAnalysisManifest" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
-       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\main.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\Adder.cpp;..\main.cpp' != '' and 'false' == 'True').
      1>Target "VcpkgTripletSelection" in file "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ClCompile" depends on it):
        Task "Message"
          Using triplet "x86-windows" from "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\"
@@ -1277,20 +1278,26 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '' and 'false' != 'true').
        Using "CL" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
-         Outputs for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\MAIN.CPP:
+         Read Tracking Logs:
+         	Debug\Lib_A.tlog\CL.read.1.tlog
+         Outputs for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\ADDER.CPP|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\MAIN.CPP:
+         	C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ
          	C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ
-         ..\main.cpp will be compiled because the tracking log is not available.
-         Write Tracking log not available, minimal rebuild will be disabled.
+         ..\Adder.cpp will be compiled because it was not found in the tracking log.
+         Outputs for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\ADDER.CPP:
+         	C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ
+         Write Tracking Logs:
+         	Debug\Lib_A.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1940
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\main.cpp
+           VS_UNICODE_OUTPUT=1684
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Adder.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Debug\Lib_A.tlog /r C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\MAIN.CPP /b MSBuildConsole_CancelEvent25b3828c400e42c0a6a256c22677360d  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe"  /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\main.cpp
-         main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Debug\Lib_A.tlog /r C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\ADDER.CPP /b MSBuildConsole_CancelEvent20fcc3199dd04c65b58c449bc93097e9  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe"  /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Adder.cpp
+         Adder.cpp
        Done executing task "CL".
      1>Done building target "ClCompile" in project "Lib_A.vcxproj".
        Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
-       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\main.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\Adder.cpp;..\main.cpp' != '' and 'false' == 'True').
        Target "NoAnalysisToolEnabledWarning" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='false' AND '$(EnableClangTidyCodeAnalysis)'=='false') was evaluated as ('false'=='true' AND 'true'=='false' AND 'false'=='false').
        Target "RunSelectedFileClangTidy" skipped, due to false condition; ('$(RunClangCppAnalysis)'=='true' AND '$(SelectedFiles)'!='') was evaluated as ('false'=='true' AND ''!='').
        Target "MicrosoftAnalysisIncompatiableWithClangCl" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='true' AND '$(UseClangCl)'=='true') was evaluated as ('false'=='true' AND 'true'=='true' AND ''=='true').
@@ -1400,11 +1407,19 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
      1>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "Link"
+         Write Tracking Logs:
+         	Debug\Lib_A.tlog\link.write.1.tlog
+         Read Tracking Logs:
+         	Debug\Lib_A.tlog\link.read.1.tlog
+         No output for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ was found in the tracking log; source compilation required.
+         No dependencies for output C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ were found in the tracking log; source compilation required.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1968
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.lib" /MACHINE:X86 Debug\main.obj
+           VS_UNICODE_OUTPUT=1456
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.lib" /MACHINE:X86 Debug\Adder.obj
+         Debug\main.obj
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Debug\Lib_A.tlog /r C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ /b MSBuildConsole_CancelEvent1c179bc43860434b81fea638841aeaa3  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.lib" /MACHINE:X86 Debug\main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Debug\Lib_A.tlog /r "C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent9ed1f8642020477fac977da6df9e86d1  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.lib" /MACHINE:X86 Debug\Adder.obj
+         Debug\main.obj
        Done executing task "Link".
        Task "Message"
          Lib_A.vcxproj -> C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe
@@ -1651,4 +1666,4 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:03.98
+Time Elapsed 00:00:02.08

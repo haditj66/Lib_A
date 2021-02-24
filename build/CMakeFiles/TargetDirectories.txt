@@ -1,0 +1,4 @@
+C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/CMakeFiles/LibA.dir
+C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/CMakeFiles/INSTALL.dir
+C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Hadi/OneDrive/Documents/Cmake_my_tutorials/FetchContentTest/Lib_A/build/CMakeFiles/ZERO_CHECK.dir
