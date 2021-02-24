@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17.3) 
 project(LibA)
 
-set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+#set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # Use this snippet *after* PROJECT(xxx):
 message("before-------------------")
@@ -15,7 +15,7 @@ message("asdasd-------------------${CMAKE_INSTALL_PREFIX}")
 # Include sub-projects.
 #add_subdirectory ("LibraryA") 
 
-add_library (LibA SHARED "Adder.cpp" "Adder.h")
+add_library (LibA STATIC "Adder.cpp" "Adder.h")
  
 
 install(TARGETS LibA
