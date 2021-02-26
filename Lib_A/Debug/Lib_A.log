@@ -948,7 +948,7 @@
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
        The target "CopyLocalFilesOutputGroup" listed in a BeforeTargets attribute at "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets (99,82)" does not exist in the project, and will be ignored.
-Build started 2/24/2021 3:10:08 AM.
+Build started 2/25/2021 8:39:05 PM.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "Current".
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -972,10 +972,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
      1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={4C1F5368-5ECE-40DA-BAB3-9E5C50DE8BD8}
+         VSTEL_SolutionSessionID={400C5325-9315-4E3F-B161-77513474725A}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=3545071207
+         VSTEL_CurrentSolutionBuildID=3694409078
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={a80f85b6-cbda-4652-9a21-0f628bfc2275}
@@ -1141,7 +1141,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Creating "Debug\Lib_A.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\Lib_A.tlog\unsuccessfulbuild".
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Lib_A.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
@@ -1283,387 +1283,30 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Hadi\OneDrive\Doc
          Outputs for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\ADDER.CPP|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\MAIN.CPP:
          	C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ
          	C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ
-         ..\Adder.cpp will be compiled because it was not found in the tracking log.
-         Outputs for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\ADDER.CPP:
-         	C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ
+         ..\main.cpp will be compiled because it was not found in the tracking log.
+         Outputs for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\MAIN.CPP:
+         	C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ
          Write Tracking Logs:
          	Debug\Lib_A.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1684
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Adder.cpp
+           VS_UNICODE_OUTPUT=1432
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\main.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Debug\Lib_A.tlog /r C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\ADDER.CPP /b MSBuildConsole_CancelEvent20fcc3199dd04c65b58c449bc93097e9  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe"  /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Adder.cpp
-         Adder.cpp
-       Done executing task "CL".
-     1>Done building target "ClCompile" in project "Lib_A.vcxproj".
-       Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
-       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\Adder.cpp;..\main.cpp' != '' and 'false' == 'True').
-       Target "NoAnalysisToolEnabledWarning" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='false' AND '$(EnableClangTidyCodeAnalysis)'=='false') was evaluated as ('false'=='true' AND 'true'=='false' AND 'false'=='false').
-       Target "RunSelectedFileClangTidy" skipped, due to false condition; ('$(RunClangCppAnalysis)'=='true' AND '$(SelectedFiles)'!='') was evaluated as ('false'=='true' AND ''!='').
-       Target "MicrosoftAnalysisIncompatiableWithClangCl" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='true' AND '$(UseClangCl)'=='true') was evaluated as ('false'=='true' AND 'true'=='true' AND ''=='true').
-     1>Target "AfterClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_ClCompile" depends on it):
-     1>Done building target "AfterClCompile" in project "Lib_A.vcxproj".
-     1>Target "_ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildCompileAction" depends on it):
-     1>Done building target "_ClCompile" in project "Lib_A.vcxproj".
-       Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
-     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_ResourceCompile" depends on it):
-     1>Done building target "BeforeResourceCompile" in project "Lib_A.vcxproj".
-     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_ResourceCompile" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-     1>Done building target "MakeDirsForResourceCompile" in project "Lib_A.vcxproj".
-       Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
-     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_ResourceCompile" depends on it):
-     1>Done building target "AfterResourceCompile" in project "Lib_A.vcxproj".
-     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildCompileAction" depends on it):
-     1>Done building target "_ResourceCompile" in project "Lib_A.vcxproj".
-       Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
-       Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
-     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildCompileAction" depends on it):
-     1>Done building target "AfterBuildCompileEvent" in project "Lib_A.vcxproj".
-     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "BuildCompile" depends on it):
-     1>Done building target "_BuildCompileAction" in project "Lib_A.vcxproj".
-     1>Target "BuildCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Build" depends on it):
-     1>Done building target "BuildCompile" in project "Lib_A.vcxproj".
-       Target "PrepareProjectReferences" skipped. Previously built successfully.
-     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "BuildLink" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-     1>Done building target "BuildLinkTraverse" in project "Lib_A.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
-     1>Done building target "ComputeLegacyManifestEmbedding" in project "Lib_A.vcxproj".
-     1>Target "BeforeLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "BeforeLink" in project "Lib_A.vcxproj".
-     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
-     1>Done building target "ComputeRCOutputs" in project "Lib_A.vcxproj".
-     1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "ComputeRCGeneratedLinkInputs" in project "Lib_A.vcxproj".
-     1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "Lib_A.vcxproj".
-       Target "ComputeCustomBuildOutput" skipped. Previously built successfully.
-       Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
-       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
-       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
-       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
-       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
-       Target "FixupCLCompileOptions" skipped. Previously built successfully.
-     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
-     1>Done building target "ComputeCLOutputs" in project "Lib_A.vcxproj".
-     1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "ComputeCLGeneratedLinkInputs" in project "Lib_A.vcxproj".
-     1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "ComputeLinkInputsFromProject" in project "Lib_A.vcxproj".
-       Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
-     1>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "ComputeManifestInputsTargets" in project "Lib_A.vcxproj".
-       Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
-       Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
-     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "PrepareResourceNames" depends on it):
-       Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
-     1>Done building target "AssignTargetPaths" in project "Lib_A.vcxproj".
-       Target "AssignTargetPaths" skipped. Previously built successfully.
-     1>Target "SplitResourcesByCulture" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "PrepareResourceNames" depends on it):
-       Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
-       Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
-       Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
-       Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
-       Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "AssignCulture"
-       Done executing task "AssignCulture".
-     1>Done building target "SplitResourcesByCulture" in project "Lib_A.vcxproj".
-       Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
-     1>Target "CreateCustomManifestResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "PrepareResourceNames" depends on it):
-     1>Done building target "CreateCustomManifestResourceNames" in project "Lib_A.vcxproj".
-     1>Target "PrepareResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "PrepareResourceNames" in project "Lib_A.vcxproj".
-     1>Target "MakeDirsForLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-     1>Done building target "MakeDirsForLink" in project "Lib_A.vcxproj".
-     1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe' == '').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe' != '' and 'C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe' != 'C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe' != '' and '.exe' != '' and '.exe' != '.exe').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe' != '' and 'Lib_A' != '' and 'Lib_A' != 'Lib_A').
-       Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('Console' == '' or 'Console' == 'NotSet')).
-     1>Done building target "DoLinkOutputFilesMatch" in project "Lib_A.vcxproj".
-     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-       Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
-       Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
-     1>Done building target "PreLinkEvent" in project "Lib_A.vcxproj".
-     1>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Link" depends on it):
-     1>Done building target "ComputeLinkSwitches" in project "Lib_A.vcxproj".
-     1>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-       Using "Link" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
-       Task "Link"
-         Write Tracking Logs:
-         	Debug\Lib_A.tlog\link.write.1.tlog
-         Read Tracking Logs:
-         	Debug\Lib_A.tlog\link.read.1.tlog
-         No output for C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ was found in the tracking log; source compilation required.
-         No dependencies for output C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ were found in the tracking log; source compilation required.
-         Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1456
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.lib" /MACHINE:X86 Debug\Adder.obj
-         Debug\main.obj
-         Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Debug\Lib_A.tlog /r "C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\ADDER.OBJ|C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\LIB_A\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent9ed1f8642020477fac977da6df9e86d1  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.lib" /MACHINE:X86 Debug\Adder.obj
-         Debug\main.obj
-       Done executing task "Link".
-       Task "Message"
-         Lib_A.vcxproj -> C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe
-       Done executing task "Message".
-       Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
-                    DebugFastLink == 'DebugFastLink' and  != '').
-       Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
-                    DebugFastLink == 'true' and  != '').
-     1>Done building target "Link" in project "Lib_A.vcxproj".
-       Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
-       Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false' and '$(CLRSupport)'!='NetCore') was evaluated as ('false'!='' and 'false'!='false' and 'false'!='NetCore').
-       Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-     1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-       Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkSecondaryOutput)' != '') was evaluated as ('' != '').
-     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "Lib_A.vcxproj".
-     1>Target "AfterLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_Link" depends on it):
-     1>Done building target "AfterLink" in project "Lib_A.vcxproj".
-     1>Target "_Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "_Link" in project "Lib_A.vcxproj".
-     1>Target "_ALink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "_ALink" in project "Lib_A.vcxproj".
-       Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
-     1>Target "_Manifest" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
-     1>Done building target "_Manifest" in project "Lib_A.vcxproj".
-     1>Target "AppLocalFromInstalled" in file "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "RegisterOutput" depends on it):
-       Task "Message"
-         [vcpkg] Starting VcpkgApplocalDeps
-       Done executing task "Message".
-       Using "Exec" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Exec"
-         pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\Lib_A.tlog\Lib_A.write.1u.tlog" "Debug\vcpkg.applocal.log"
-         'pwsh.exe' is not recognized as an internal or external command,
-         operable program or batch file.
-         The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\Lib_A.tlog\Lib_A.write.1u.tlog" "Debug\vcpkg.applocal.log"" exited with code 9009.
-       Done executing task "Exec".
-       Task "Message"
-         [vcpkg] Failed to run applocal.ps1 using pwsh, falling back to system PowerShell.
-       Done executing task "Message".
-       Task "Exec"
-         "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\Lib_A.exe" "C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\Lib_A.tlog\Lib_A.write.1u.tlog" "Debug\vcpkg.applocal.log"
-       Done executing task "Exec".
-       Task "Warning" skipped, due to false condition; ($(_VcpkgAppLocalExitCode) != 0) was evaluated as (0 != 0).
-       Task "ReadLinesFromFile"
-       Done executing task "ReadLinesFromFile".
-       Task "Message"
-       Done executing task "Message".
-     1>Done building target "AppLocalFromInstalled" in project "Lib_A.vcxproj".
-     1>Target "RegisterOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
-       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
-     1>Done building target "RegisterOutput" in project "Lib_A.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_XdcMake" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
-     1>Done building target "ResolvedXDCMake" in project "Lib_A.vcxproj".
-     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_XdcMake" depends on it):
-     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "Lib_A.vcxproj".
-     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_XdcMake" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-     1>Done building target "MakeDirsForXdcMake" in project "Lib_A.vcxproj".
-       Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
-     1>Target "_XdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "_XdcMake" in project "Lib_A.vcxproj".
-     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BscMake" depends on it):
-     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "Lib_A.vcxproj".
-     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BscMake" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-     1>Done building target "MakeDirsForBscMake" in project "Lib_A.vcxproj".
-       Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
-       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "_BscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "_BscMake" in project "Lib_A.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-     1>Target "BuiltProjectOutputGroup" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "CreateRecipeFile" depends on it):
-     1>Done building target "BuiltProjectOutputGroup" in project "Lib_A.vcxproj".
-       Target "PrepareResourceNames" skipped. Previously built successfully.
-     1>Target "SatelliteDllsProjectOutputGroup" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "CreateRecipeFile" depends on it):
-       Task "CreateItem" skipped, due to false condition; ('@(ResxWithCulture)' != '') was evaluated as ('' != '').
-       Task "CreateItem" skipped, due to false condition; ('$(UICulture)' != '') was evaluated as ('' != '').
-       Task "CreateItem" skipped, due to false condition; ('@(NonResxWithCulture)' != '') was evaluated as ('' != '').
-       Using "CreateItem" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "CreateItem"
-       Done executing task "CreateItem".
-       Task "CreateItem"
-       Done executing task "CreateItem".
-     1>Done building target "SatelliteDllsProjectOutputGroup" in project "Lib_A.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "AssignTargetPaths" skipped. Previously built successfully.
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "AssignTargetPaths" skipped. Previously built successfully.
-     1>Target "MakeDirsForFxc" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "ContentFilesProjectOutputGroup" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-     1>Done building target "MakeDirsForFxc" in project "Lib_A.vcxproj".
-       Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
-     1>Target "ContentFilesProjectOutputGroup" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "CreateRecipeFile" depends on it):
-       Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' != '') was evaluated as ('' != '' and '' != '').
-       Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' == '') was evaluated as ('' != '' and '' == '').
-     1>Done building target "ContentFilesProjectOutputGroup" in project "Lib_A.vcxproj".
-       Target "GetReferencedVCProjectsInfo" skipped. Previously built successfully.
-     1>Target "CreateRecipeFile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-       Using "GenerateDesktopDeployRecipe" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
-       Task "GenerateDesktopDeployRecipe"
-       Done executing task "GenerateDesktopDeployRecipe".
-     1>Done building target "CreateRecipeFile" in project "Lib_A.vcxproj".
-     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
-       Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-       Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "Lib_A.vcxproj".
-       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
-       Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "CreateSatelliteAssemblies" in project "Lib_A.vcxproj".
-       Target "CopyLocalNativeReference" skipped, due to false condition; ('$(CopyLocalProjectReference)' == 'true') was evaluated as ('false' == 'true').
-     1>Target "_Appverifier" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "_Appverifier" in project "Lib_A.vcxproj".
-     1>Target "_Deploy" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "_Deploy" in project "Lib_A.vcxproj".
-       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
-       Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
-       Target "AssignTargetPaths" skipped. Previously built successfully.
-       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-       Target "_GetProjectReferenceTargetFrameworkProperties" skipped. Previously built successfully.
-     1>Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
-     1>Done building target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in project "Lib_A.vcxproj".
-     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "Lib_A.vcxproj".
-     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
-       Using "CallTarget" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "CallTarget"
-       Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
-     1>Target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-     1>Done building target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in project "Lib_A.vcxproj".
-       Done executing task "CallTarget".
-       Task "CallTarget"
-       Target "AssignTargetPaths" skipped. Previously built successfully.
-       Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
-     1>Target "_GetCopyToOutputDirectoryItemsFromThisProject" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-     1>Done building target "_GetCopyToOutputDirectoryItemsFromThisProject" in project "Lib_A.vcxproj".
-       Done executing task "CallTarget".
-     1>Done building target "GetCopyToOutputDirectoryItems" in project "Lib_A.vcxproj".
-       Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
-       Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
-     1>Done building target "_CopySourceItemsToOutputDirectory" in project "Lib_A.vcxproj".
-       Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
-       Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-     1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
-     1>Done building target "_CheckForCompileOutputs" in project "Lib_A.vcxproj".
-       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "PrepareForRun" depends on it):
-       Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
-       Task "CopyRefAssembly" skipped, due to false condition; ('$(ProduceReferenceAssembly)' == 'true' and '$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('false' == 'true' and 'true' == 'true' and 'true' != 'true').
-       Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
-       Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
-       Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
-       Task "Copy" skipped, due to false condition; ('$(_DebugSymbolsProduced)'=='true' and '$(SkipCopyingSymbolsToOutputDirectory)' != 'true' and '$(CopyOutputSymbolsToOutputDirectory)'=='true') was evaluated as ('false'=='true' and '' != 'true' and 'true'=='true').
-       Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true' and '$(CopyDocumentationFileToOutputDirectory)'=='true') was evaluated as ('false'=='true' and 'true'=='true').
-       Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
-       Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
-       Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
-       Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
-     1>Done building target "CopyFilesToOutputDirectory" in project "Lib_A.vcxproj".
-     1>Target "PrepareForRun" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-     1>Done building target "PrepareForRun" in project "Lib_A.vcxproj".
-       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
-       Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
-     1>Done building target "PostBuildEvent" in project "Lib_A.vcxproj".
-     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "BuildLink" depends on it):
-     1>Done building target "_BuildLinkAction" in project "Lib_A.vcxproj".
-     1>Target "BuildLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Build" depends on it):
-     1>Done building target "BuildLink" in project "Lib_A.vcxproj".
-     1>Target "AfterBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Build" depends on it):
-     1>Done building target "AfterBuild" in project "Lib_A.vcxproj".
-       Target "_CheckForCompileOutputs" skipped. Previously built successfully.
-       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-     1>Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "IncrementalClean" depends on it):
-       Task "ReadLinesFromFile"
-       Done executing task "ReadLinesFromFile".
-       Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "ConvertToAbsolutePath"
-       Done executing task "ConvertToAbsolutePath".
-       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "Debug\".
-       Done executing task "FindUnderPath".
-       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "RemoveDuplicates"
-       Done executing task "RemoveDuplicates".
-     1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "Lib_A.vcxproj".
-     1>Target "IncrementalClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Build" depends on it):
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Debug\".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "Debug\".
-       Done executing task "FindUnderPath".
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-       Done executing task "Delete".
-       Task "RemoveDuplicates"
-       Done executing task "RemoveDuplicates".
-       Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as (''!='').
-     1>Done building target "IncrementalClean" in project "Lib_A.vcxproj".
-     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (target "Build" depends on it):
-       Task "Delete"
-         Deleting file "Debug\Lib_A.tlog\unsuccessfulbuild".
-       Done executing task "Delete".
-       Task "Touch"
-         Touching "Debug\Lib_A.tlog\Lib_A.lastbuildstate".
-       Done executing task "Touch".
-     1>Done building target "FinalizeBuildStatus" in project "Lib_A.vcxproj".
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (entry point):
-     1>Done building target "Build" in project "Lib_A.vcxproj".
-     1>Done Building Project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Debug\Lib_A.tlog /r C:\USERS\HADI\ONEDRIVE\DOCUMENTS\CMAKE_MY_TUTORIALS\FETCHCONTENTTEST\LIB_A\MAIN.CPP /b MSBuildConsole_CancelEvent28c70139e7c74074a19700a96430e17e  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe"  /c /I"C:\vspkginstall\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\main.cpp
+         main.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\main.cpp': No such file or directory
+         The command exited with code 2.
+       Done executing task "CL" -- FAILED.
+     1>Done building target "ClCompile" in project "Lib_A.vcxproj" -- FAILED.
+     1>Done Building Project "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
+
+       "C:\Users\Hadi\OneDrive\Documents\Cmake_my_tutorials\FetchContentTest\Lib_A\Lib_A\Lib_A.vcxproj" (Build target) (1) ->
+       (ClCompile target) -> 
+         c1xx : fatal error C1083: Cannot open source file: '..\main.cpp': No such file or directory
+
     0 Warning(s)
-    0 Error(s)
+    1 Error(s)
 
-Time Elapsed 00:00:02.08
+Time Elapsed 00:00:00.55
